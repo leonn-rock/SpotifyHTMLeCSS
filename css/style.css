@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: spotify;
+    src: url(../Spotfy/Fonte/GothamMedium_1.ttf);
+}
+*{
+    font-family: spotify;
+}
+.bg-gradient-rosa-preto{
+    background: linear-gradient(#61314b 20%, #101010 70%);
+}
+.bg-preto-transparente{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.text-gray{
+    color: #e0e0e0;
+}
+.text-spotify-primary{
+    color: #1ed760;
+}
+.text-spotify-secondary{
+    color: #1db954;
+}
+.borda-spotify{
+    margin-top: 2px;
+}
+.borda-spotify:hover::after{
+    width: 100%;
+    transition: 500ms;
+}
+.borda-spotify::after{
+    content: "";
+    border-bottom:  2px solid #1ed760;
+    display: block;
+    width: 40%;
+    height: 0px;
+    margin: 0 auto;
+}
+.space{
+    width: 100%;
+    height: 50px;
+}
+.itemP{
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+}
+.itemP:hover{
+    cursor: pointer;
+}
+.itemM{
+    width: 35px;
+    height: 35px;
+    background-position: center;
+    background-size: cover;   
+}
+.itemM:hover{
+    cursor: pointer;
+}
+.barra{
+    width: 50%;
+    height: 5px;
+    margin-top: 10px;
+    background-color: #747474;
+    border-radius: 5px;
+}
+.barra:hover{
+    box-shadow: 0px 0px 3px rgb(184, 184, 184);
+    cursor: pointer;
+}
+.divisoria{
+    background-color: #e0e0e0;
+    height: 2px;
+    width: 100%;
+}
+.nmt-2{
+    margin-top: -20px;
+}
+.direita{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+}
+
+
+/*A PARTIR DAQUI, O CÓDIGO SERVE PARA ESCONDER A BARRA DE ROLAGEM*/
+
+::-webkit-scrollbar{ /*PARA A MAIORIA DOS NAVEGADORES*/
+    width: 0%;
+}
+.div-fit{   /*PARA O FIREFOX*/
+    scrollbar-width: none;
+}
